@@ -18,7 +18,6 @@
 .header_title a, .title{
 	color: #fefefe;
 	text-shadow: 0 -1px rgba(0, 0, 0, .5);
-	font-weight: normal;
 }
 
 
@@ -80,6 +79,7 @@ header {
 .header_title a{
 	font-size:1.8em;
 	font-family: 'Lobster',sans-serif;
+	font-weight: normal;
 }
 
 
@@ -142,6 +142,7 @@ header {
 	background-color: rgba(0,0,0,.3);
 	top:220px;
 	font-family: 'Lobster',sans-serif;
+	font-weight: normal;
 }
 
 
@@ -150,7 +151,11 @@ header {
 /* GENERAL LAYERS */
 
 .title_top{
-	top:120px;
+	top:100px;
+}
+
+.title_top_specifique{
+	top:150px;
 }
 
 .content{
@@ -158,12 +163,15 @@ header {
     position: absolute;
     left: 50%;
     width: 80%;
-    top: 300px;
+    top:50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: lighter;
     font-size: 0.8em;
+}
+.content_specifique{
+    top: 390px;
 }
 
 
@@ -179,4 +187,25 @@ header {
 }
 #group2 .last_layer{
 	height: 100vh;
+}
+#exorde{
+	position: absolute;top:-180px;
+}
+
+
+
+/* GROUPE 3 */
+.services_content{
+	border: 1px solid #ddd;
+	background-color: #fff;
+	border-radius: 5px;
+	display: inline-block;
+}
+.services_content_spacer{
+	position: absolute;
+	top:2px;
+	bottom: 0px;
+	left: 50%;
+	width: 1px;
+	background-color: #ddd;
 }
