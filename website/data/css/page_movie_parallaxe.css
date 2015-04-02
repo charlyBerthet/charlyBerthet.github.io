@@ -1,0 +1,25 @@
+
+.page_movie_parallaxe{
+  height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  perspective: 1px;
+}
+
+.page_movie_parallaxe_img{
+  position: relative;
+  display: inline-block;
+  width:100%;
+  height: auto;
+}
+.page_movie_parallaxe_video{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width:100%;
+  height: auto;
+}

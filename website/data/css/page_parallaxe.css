@@ -1,0 +1,51 @@
+
+.parallax {
+  	perspective: 1px;
+  	height: 950px;
+  	overflow-x: hidden;
+  	overflow-y: auto;
+  	position: relative;
+}
+
+/* 
+ scale = 1 + (translateZ * -1) / perspective
+*/
+
+.parallax__layer {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+  	bottom: 0;
+  	left: 0;
+	-webkit-transform-origin-x: 100%;
+    transform-origin-x: 100%;
+}
+.parallax__layer_2 {
+	background: url(https://scontent-cdg.xx.fbcdn.net/hphotos-xap1/v/l/t1.0-9/11038124_10153151130723627_2210454543938709117_n.jpg?oh=e9e5a68438f5b61889dc620ebbd57e66&oe=55AC198D);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 150px;
+  	transform: translateZ(-4px) scale(5);
+  	border:2px solid green;
+}
+.parallax__layer_1 {
+	
+  	background: url(https://scontent-cdg.xx.fbcdn.net/hphotos-xap1/t31.0-8/p960x960/10634023_10152670695378627_5739414408665510319_o.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	-webkit-background-size: cover;
+  	transform: translateZ(-10px) scale(11);
+  	border:2px solid blue;
+}
+
+.parallax__layer_3{
+	background: url(https://scontent-cdg.xx.fbcdn.net/hphotos-xap1/v/l/t1.0-9/11038124_10153151130723627_2210454543938709117_n.jpg?oh=e9e5a68438f5b61889dc620ebbd57e66&oe=55AC198D);
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	background-size: 150px;
+
+
+	transform: translateZ(0px) scale(1);
+  	border:2px solid orange;
+}
